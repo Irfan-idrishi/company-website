@@ -52,6 +52,59 @@
                 <span class="logo-pill"><i class="fa-solid fa-bag-shopping"></i> LuxCart</span>
               </div>
             </article>
+
+               <article class="t-item" aria-label="Testimonial 1">
+              <p class="quote">"Our CPA dropped fast once tracking was fixed. The landing page changes were simple but powerful — we saw more qualified leads within two weeks."</p>
+              <div class="t-meta">
+                <div class="avatar"><img loading="lazy" src="assets/images/1.webp" alt="Client photo" /></div>
+                <div>
+                  <div class="t-name">Aman Alam</div>
+                  <div class="t-role">Marketing Manager</div>
+                </div>
+                <span class="logo-pill"><i class="fa-solid fa-building"></i> Skylane Co.</span>
+              </div>
+            </article>
+
+            <article class="t-item" aria-label="Testimonial 1">
+              <p class="quote">"Our CPA dropped fast once tracking was fixed. The landing page changes were simple but powerful — we saw more qualified leads within two weeks."</p>
+              <div class="t-meta">
+                <div class="avatar"><img loading="lazy" src="assets/images/2.webp" alt="Client photo" /></div>
+                <div>
+                  <div class="t-name">Irfan</div>
+                  <div class="t-role">Marketing Manager</div>
+                </div>
+                <span class="logo-pill"><i class="fa-solid fa-building"></i> Skylane Co.</span>
+              </div>
+            </article>
+
+            <article class="t-item" aria-label="Testimonial 1">
+              <p class="quote">"Our CPA dropped fast once tracking was fixed. The landing page changes were simple but powerful — we saw more qualified leads within two weeks."</p>
+              <div class="t-meta">
+                <div class="avatar"><img loading="lazy" src="assets/images/3.webp" alt="Client photo" /></div>
+                <div>
+                  <div class="t-name">favish</div>
+                  <div class="t-role">Marketing Manager</div>
+                </div>
+                <span class="logo-pill"><i class="fa-solid fa-building"></i> Skylane Co.</span>
+              </div>
+            </article>
+
+            
+            <article class="t-item" aria-label="Testimonial 1">
+              <p class="quote">"Our CPA dropped fast once tracking was fixed. The landing page changes were simple but powerful — we saw more qualified leads within two weeks."</p>
+              <div class="t-meta">
+                <div class="avatar"><img loading="lazy" src="assets/images/4.webp" alt="Client photo" /></div>
+                <div>
+                  <div class="t-name">Amir</div>
+                  <div class="t-role">Marketing Manager</div>
+                </div>
+                <span class="logo-pill"><i class="fa-solid fa-building"></i> Skylane Co.</span>
+              </div>
+            </article>
+
+
+
+
           </div>
         </div>
       </div>
