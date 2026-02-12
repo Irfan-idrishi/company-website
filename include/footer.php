@@ -99,7 +99,7 @@
           title="Google Map"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps?q=Dubai&output=embed"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.046479850278!2d77.204622!3d28.51376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce179ef7bc3dd%3A0xddded4208b0de778!2sWeb%20Marlins%20-%20Digital%20Marketing%20Agency%20in%20Delhi!5e0!3m2!1sen!2sin!4v1699999999999"
           allowfullscreen>
         </iframe>
       </div>

@@ -134,7 +134,7 @@
         <div class="hero2-logos-inner">
           <a href="#">
           <img
-            src="assets/shopify.png"
+            src="assets/images/shopify logo.png"
             alt="Shopify"
             class="hero2-logo"
             loading="lazy"
@@ -142,33 +142,33 @@
           />
           </a>
           <img
-            src="assets/semrush.png"
+            src="assets/images/semrus logo.png"
             alt="Semrush"
             class="hero2-logo"
             loading="lazy"
           />
           <a href="https://www.instagram.com/webmarlins?igsh=MXJxZWV3OW43eWd0eA==">
           <img
-            src="assets/instagram.jpeg"
+            src="assets/images/instagram logo.png"
             alt="Instagram"
             class="hero2-logo"
             loading="lazy"
           />
           </a>
           <img
-            src="assets/wordpress.png"
+            src="assets/images/wordpress_blue_logo.png"
             alt="Wordpress"
             class="hero2-logo"
             loading="lazy"
           />
           <img
-         src="assets/python.jpeg"
+         src="assets/images/python logo.png"
             alt="Python"
             class="hero2-logo"
             loading="lazy"
           />
           <img
-           src="assets/facebook.png"
+           src="assets/images/facebook logo.png"
             alt="Facebook"
             class="hero2-logo"
             loading="lazy"
