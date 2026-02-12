@@ -99,7 +99,7 @@
           title="Google Map"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps?q=Dubai&output=embed"
+          src=""
           allowfullscreen>
         </iframe>
       </div>
