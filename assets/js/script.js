@@ -1391,3 +1391,237 @@ window.addEventListener('unhandledrejection', function(e) {
 console.log('%c🚀 SEO Landing Page Loaded Successfully!', 'color: #FE5862; font-size: 20px; font-weight: bold;');
 console.log('%cBuilt with ❤️ by Web Marlins', 'color: #172342; font-size: 14px;');
 console.log('%cWebsite: https://webmarlins.com', 'color: #3b82f6; font-size: 12px;');
+
+
+// Mobile Dropdown Toggle
+document.addEventListener('DOMContentLoaded', function() {
+  const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+  
+  dropdownToggles.forEach(toggle => {
+    toggle.addEventListener('click', function(e) {
+      // Only on mobile (screen width < 768px)
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        const dropdown = this.closest('.dropdown');
+        dropdown.classList.toggle('active');
+      }
+    });
+  });
+});
+
+(() => {
+  'use strict';
+
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // ---------- Year ----------
+  const year = document.getElementById('year');
+  if (year) year.textContent = new Date().getFullYear();
+
+  // ---------- Mobile Nav (smooth, accessible) ----------
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobileNav');
+  if (hamburger && mobileNav) {
+    hamburger.addEventListener('click', () => {
+      const open = mobileNav.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', String(open));
+    });
+
+    // Close on link click
+    mobileNav.querySelectorAll('a').forEach((a) => {
+      a.addEventListener('click', () => {
+        mobileNav.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
+  // ---------- Reveal on Scroll ----------
+  const revealEls = Array.from(document.querySelectorAll('.reveal'));
+  if (!reduceMotion && revealEls.length) {
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add('in');
+            io.unobserve(e.target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+    revealEls.forEach((el) => io.observe(el));
+  } else {
+    // Reduced motion: show all immediately
+    revealEls.forEach((el) => el.classList.add('in'));
+  }
+
+  // ---------- Counters (Why section) ----------
+  const counters = Array.from(document.querySelectorAll('.count'));
+  const why = document.getElementById('why');
+
+  const runCounter = (el) => {
+    const target = parseInt(el.dataset.target || '0', 10);
+    const dur = 900;
+    const start = performance.now();
+
+    const tick = (t) => {
+      const p = Math.min(1, (t - start) / dur);
+      el.textContent = Math.round(target * p);
+      if (p < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  };
+
+  if (!reduceMotion && counters.length && why) {
+    const cio = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((en) => {
+          if (en.isIntersecting) {
+            counters.forEach(runCounter);
+            cio.disconnect();
+          }
+        });
+      },
+      { threshold: 0.25 }
+    );
+    cio.observe(why);
+  } else {
+    counters.forEach((el) => (el.textContent = el.dataset.target || '0'));
+  }
+
+  // ---------- Process Steps (progress fill) ----------
+  const steps = document.querySelectorAll('.step');
+  if (!reduceMotion && steps.length) {
+    const stepIO = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          const progress = entry.target.querySelector('.progress');
+          if (progress) progress.style.height = '100%';
+          stepIO.unobserve(entry.target);
+        });
+      },
+      { threshold: 0.35 }
+    );
+    steps.forEach((s) => stepIO.observe(s));
+  } else {
+    steps.forEach((s) => {
+      const p = s.querySelector('.progress');
+      if (p) p.style.height = '100%';
+    });
+  }
+
+  // ---------- Testimonials Carousel (auto + manual) ----------
+  const carousel = document.getElementById('carousel');
+  const tPrev = document.getElementById('tPrev');
+  const tNext = document.getElementById('tNext');
+  let tIndex = 0;
+  let tTimer = null;
+
+  function setCarousel(idx) {
+    if (!carousel) return;
+    const items = carousel.children.length || 1;
+    tIndex = (idx + items) % items;
+    carousel.style.transform = `translateX(-${tIndex * 100}%)`;
+  }
+
+  function startAuto() {
+    if (reduceMotion) return;
+    stopAuto();
+    tTimer = setInterval(() => setCarousel(tIndex + 1), 5200);
+  }
+
+  function stopAuto() {
+    if (tTimer) clearInterval(tTimer);
+    tTimer = null;
+  }
+
+  if (tPrev) tPrev.addEventListener('click', () => { setCarousel(tIndex - 1); startAuto(); });
+  if (tNext) tNext.addEventListener('click', () => { setCarousel(tIndex + 1); startAuto(); });
+  startAuto();
+
+  // ---------- Parallax Tilt (desktop, no touch) ----------
+  const tilt = document.getElementById('heroTilt');
+  const isTouch = window.matchMedia('(pointer: coarse)').matches;
+  if (tilt && !reduceMotion && !isTouch) {
+    tilt.addEventListener('mousemove', (e) => {
+      const r = tilt.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width - 0.5;
+      const y = (e.clientY - r.top) / r.height - 0.5;
+      tilt.style.transform = `perspective(900px) rotateY(${x * 6}deg) rotateX(${-y * 6}deg)`;
+    });
+    tilt.addEventListener('mouseleave', () => {
+      tilt.style.transform = 'perspective(900px) rotateY(0deg) rotateX(0deg)';
+    });
+  }
+
+  // ---------- Toast (with timeout cleanup) ----------
+  const toast = document.getElementById('toast');
+  const toastText = document.getElementById('toastText');
+  let toastTimeout = null;
+
+  function showToast(msg) {
+    if (!toast || !toastText) return;
+    if (toastTimeout) clearTimeout(toastTimeout);
+    toastText.textContent = msg;
+    toast.classList.add('show');
+    toastTimeout = setTimeout(() => {
+      toast.classList.remove('show');
+      toastTimeout = null;
+    }, 3200);
+  }
+
+  // ---------- Validation Helpers ----------
+  const isEmail = (v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(v).trim());
+  const isNonEmpty = (v) => String(v).trim().length > 1;
+
+  function validateForm(form) {
+    let ok = true;
+    const fields = Array.from(form.querySelectorAll('.field'));
+    fields.forEach((f) => f.classList.remove('invalid'));
+
+    const inputs = Array.from(form.querySelectorAll('input, select, textarea'));
+    inputs.forEach((input) => {
+      const wrap = input.closest('.field');
+      if (!wrap) return;
+
+      const val = input.value;
+      let valid = true;
+
+      if (input.hasAttribute('required')) {
+        if (input.type === 'email') valid = isEmail(val);
+        else valid = isNonEmpty(val);
+      }
+
+      if (!valid) {
+        ok = false;
+        wrap.classList.add('invalid');
+      }
+    });
+
+    return ok;
+  }
+
+  // ---------- Hero Form ----------
+  const heroLeadForm = document.getElementById('heroLeadForm');
+  if (heroLeadForm) {
+    heroLeadForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (!validateForm(heroLeadForm)) return;
+      showToast('Thanks! We’ll share pricing + timeline shortly.');
+      heroLeadForm.reset();
+    });
+  }
+
+  // ---------- Contact Form ----------
+  const leadForm = document.getElementById('leadForm');
+  if (leadForm) {
+    leadForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (!validateForm(leadForm)) return;
+      showToast('Message sent! We’ll contact you soon.');
+      leadForm.reset();
+    });
+  }
+})();
