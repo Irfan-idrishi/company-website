@@ -1,89 +1,13 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="WebMarlins Website Designing Services — conversion-first design, fast development, and measurable growth."
-    />
-    <title>WebMarlins — Website Designing Services</title>
-
-    <!-- Icons (same style you use on homepage) -->
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-<?php 
-include '../../include/header.php';
- ?>
-    
-
-    <link rel="stylesheet" href="../../assets/css/style.css" />
-  </head>
+<?php
+include '../../include/head.php'; 
+  ?>
 
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- Header -->
-    <!-- <header>
-      <div class="container">
-        <div class="nav" role="navigation" aria-label="Primary navigation">
-          <a class="brand" href="./" aria-label="WebMarlins home">
-            <img
-              class="brand-logo"
-              src="https://webmarlins.com/in/images/LOGO-PNG.png"
-              alt="WebMarlins"
-              loading="eager"
-              decoding="async"
-              height="38"
-              width="auto"
-            />
-          </a>
 
-          <nav class="desktop-nav" aria-label="Main">
-            <ul>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#expertise">Tools</a></li>
-              <li><a href="#process">Process</a></li>
-              <li><a href="#cases">Case Studies</a></li>
-              <li><a href="#reviews">Reviews</a></li>
-              <li><a href="#faq">FAQ</a></li>
-            </ul>
-          </nav>
-
-          <div class="nav-cta">
-            <a class="btn btn-ghost" href="#contact"
-              ><i class="fa-regular fa-calendar"></i> Book a Call</a
-            >
-            <a class="btn btn-primary" href="#contact"
-              ><i class="fa-solid fa-bolt"></i> Get a Quote</a
-            >
-
-            <button
-              class="hamburger"
-              id="hamburger"
-              aria-label="Open mobile menu"
-              aria-expanded="false"
-              aria-controls="mobileNav"
-            >
-              <i class="fa-solid fa-bars"></i>
-            </button>
-          </div>
-        </div>
-
-        <div class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
-          <a href="#services">Services</a>
-          <a href="#expertise">Tools</a>
-          <a href="#process">Process</a>
-          <a href="#cases">Case Studies</a>
-          <a href="#reviews">Reviews</a>
-          <a href="#faq">FAQ</a>
-          <a href="#contact">Contact</a>
-        </div>
-      </div>
-    </header> -->
 
     <main id="main">
       <!-- HERO (left content + right CTA form) -->

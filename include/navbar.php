@@ -12,14 +12,14 @@
 
     <!-- Services Dropdown -->
     <li class="dropdown">
-      <a href="/company-website/sections/service.php" class="dropdown-toggle">
+      <a href="#" class="dropdown-toggle">
         Services 
         <i class="fa-solid fa-chevron-down"></i>
       </a>
       
       <!-- Dropdown Menu -->
       <ul class="dropdown-menu">
-        <li><a href="/company-website/sections/services/seo.php">SEO</a></li>
+        <li><a href="/company-website/sections/services/local-seo.php">SEO</a></li>
         <li><a href="/company-website/sections/services/ppc.php">PPC</a></li>
         <li><a href="/company-website/sections/services/web-designing.php">Web Designing</a></li>
         <li><a href="/company-website/sections/services/social-media-marketing.php">Social Media Marketing</a></li>

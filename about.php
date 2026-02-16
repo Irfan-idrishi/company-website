@@ -1,30 +1,17 @@
 
-  <!-- ABOUT US -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link rel="stylesheet" href="assets/css/style.css" /> 
-</head>
-<body>
-  
-
-  <?php include 'include/header.php'; ?>
  
   <section id="about" class="aboutX" aria-label="About us">
     <div class="container">
       <div class="aboutX-head">
         <div>
-          <span class="kicker">About us</span>
+          <span class="kicker">About Web Marlins</span>
           <h2 class="aboutX-title">
-            We build <span class="aboutX-grad">conversion-first</span> systems — not random tactics
+           A Conversion  <span class="aboutX-grad">First Digital Marketing</span>Services Provider in Delhi
           </h2>
-          <p class="lead">Strategy, tracking, creative and CRO — tied to measurable outcomes.</p>
+          <p class="lead">As a leading digital marketing company in Neb Sarai, Delhi, we don't believe in random tactics.
+             Web Marlins combines strategy, tracking, creative excellence, and continuous optimization to deliver measurable outcomes for businesses across Delhi NCR.
+              From small businesses to growing startups, our services are designed to generate real ROI, not just vanity metrics.
+          </p>
         </div>
 
         <div class="aboutX-cta">
@@ -38,34 +25,35 @@
           <div class="aboutX-top">
             <div class="aboutX-ic" aria-hidden="true"><i class="fa-solid fa-compass-drafting"></i></div>
             <div>
-              <h3>Built for modern growth teams</h3>
-              <p>Clear priorities, weekly iteration, and transparent reporting that maps to results.</p>
+              <h3>Built for Modern Growth Teams</h3>
+              <p>Whether you're a startup looking for scalable growth or an established business seeking better performance, our digital marketing agency for small business provides clear priorities, weekly iterations, and transparent reporting that maps directly to your bottom line.
+             </p>
             </div>
           </div>
 
           <div class="aboutX-stats" aria-label="Key statistics">
             <div class="aboutX-stat">
-              <div class="aboutX-num"><span class="counter" data-target="8">0</span>+</div>
+              <div class="aboutX-num"><span class="counter" data-target="8">8</span>+</div>
               <div class="aboutX-lbl">Years</div>
               <div class="aboutX-line"><span style="--w:78%"></span></div>
             </div>
             <div class="aboutX-stat">
-              <div class="aboutX-num"><span class="counter" data-target="240">0</span>+</div>
+              <div class="aboutX-num"><span class="counter" data-target="240">240</span>+</div>
               <div class="aboutX-lbl">Tests shipped</div>
               <div class="aboutX-line"><span style="--w:88%"></span></div>
             </div>
             <div class="aboutX-stat">
-              <div class="aboutX-num"><span class="counter" data-target="96">0</span>%</div>
+              <div class="aboutX-num"><span class="counter" data-target="96">96</span>%</div>
               <div class="aboutX-lbl">Retention</div>
               <div class="aboutX-line"><span style="--w:92%"></span></div>
             </div>
           </div>
 
           <div class="aboutX-pills" aria-label="Capabilities">
-            <span class="aboutX-pill"><i class="fa-solid fa-check"></i> GA4 + GTM tracking QA</span>
-            <span class="aboutX-pill"><i class="fa-solid fa-check"></i> Creative ↔ Landing alignment</span>
-            <span class="aboutX-pill"><i class="fa-solid fa-check"></i> Weekly test roadmap</span>
-            <span class="aboutX-pill"><i class="fa-solid fa-check"></i> CRO + speed improvements</span>
+            <span class="aboutX-pill"><i class="fa-solid fa-check"></i> GA4 + GTM Conversion Tracking  </span>
+            <span class="aboutX-pill"><i class="fa-solid fa-check"></i> Creative & Landing Page Alignment  </span>
+            <span class="aboutX-pill"><i class="fa-solid fa-check"></i> Weekly A/B Testing Reports</span>
+            <span class="aboutX-pill"><i class="fa-solid fa-check"></i> CRO + Website Speed Optimization</span>
           </div>
 
           <div class="aboutX-actions">
@@ -108,9 +96,3 @@
       </div>
     </div>
   </section>
-
-  <?php include 'include/footer.php'; ?> 
-  
-  
-  </body>
-</html>

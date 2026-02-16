@@ -1,20 +1,9 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Modern digital marketing & SEO landing page template with animations, case studies, FAQ accordion, testimonials carousel, and validated contact form." />
-  <title>Web Marlins — SEO, Paid Ads & Web Growth</title>
-
-  <!-- Icons -->
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="assets/css/style.css" />
-</head>
-
+<?php
+include 'include/head.php'; 
+  ?>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 

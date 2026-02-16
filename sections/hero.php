@@ -12,13 +12,16 @@
           <span class="hero2-kicker">Digital Marketing Agency in Delhi</span>
 
           <h1 class="hero2-title">
-            Websites & Campaigns
-            <span class="hero2-shimmer">That Grow</span>
-            Your Business
+           Delhi's Leading 
+
+            <span class="hero2-shimmer">Digital Marketing Agency </span>
+            for Long-Term Growth
+
           </h1>
 
           <p class="hero2-sub">
-            We help brands scale with high-converting landing pages, clean tracking, and
+            Web Marlins is a results-driven digital marketing agency in Delhi NCR delivering proven SEO, PPC, social media, and web development strategies that turn clicks into customers.
+             We help startups and small businesses grow with transparent reporting, weekly optimizations, and campaigns built to scale.
             performance marketing — with weekly optimization loops that drive real results.
           </p>
 
@@ -35,22 +38,23 @@
             <div class="hero2-badge">
               <span class="hero2-dot"></span>
               <div>
-                <strong>100+</strong>
-                <span>Projects Delivered</span>
+                <strong>240+</strong>
+                <span>Campaigns Delivered in Delhi NCR</span>
               </div>
             </div>
             <div class="hero2-badge">
               <span class="hero2-dot"></span>
               <div>
-                <strong>ROI-Focused</strong>
-                <span>Strategy</span>
+                <strong>Certified
+                   </strong>
+                <span>Digital Marketing Experts</span>
               </div>
             </div>
             <div class="hero2-badge">
               <span class="hero2-dot"></span>
               <div>
-                <strong>Long-Term</strong>
-                <span>Partnerships</span>
+                <strong>Client Retention </strong>
+                <span>Rate</span>
               </div>
             </div>
           </div>

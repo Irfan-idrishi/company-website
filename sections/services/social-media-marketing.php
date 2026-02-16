@@ -3,10 +3,11 @@
 <?php
 include '../../include/head.php'; 
   ?>
-
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
+
+  
   <?php
   include '../../include/header.php';
   ?>
