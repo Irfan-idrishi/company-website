@@ -11,7 +11,7 @@
           />
         </a>
 
-        <?php $base_url = "/webmarlins-new-project/"; ?>
+        
 
 
         <?php
