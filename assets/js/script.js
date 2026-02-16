@@ -4,25 +4,44 @@ document.addEventListener('DOMContentLoaded', function() {
   /* -------------------------
     Mobile nav toggle
   --------------------------*/
-  const hamburger = document.getElementById('hamburger');
-  const mobileNav = document.getElementById('mobileNav');
+  // const hamburger = document.getElementById('hamburger');
+  // const mobileNav = document.getElementById('mobileNav');
 
-  if (hamburger && mobileNav) {
-    hamburger.addEventListener('click', () => {
-      const open = mobileNav.classList.toggle('open');
-      hamburger.setAttribute('aria-expanded', String(open));
-      hamburger.innerHTML = open ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
-    });
+  // if (hamburger && mobileNav) {
+  //   hamburger.addEventListener('click', () => {
+  //     const open = mobileNav.classList.toggle('open');
+  //     hamburger.setAttribute('aria-expanded', String(open));
+  //     hamburger.innerHTML = open ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>';
+  //   });
 
-    // Close menu on click
-    mobileNav.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => {
-        mobileNav.classList.remove('open');
-        hamburger.setAttribute('aria-expanded', 'false');
-        hamburger.innerHTML = '<i class="fa-solid fa-bars"></i>';
-      });
-    });
-  }
+  //   // Close menu on click
+  //   mobileNav.querySelectorAll('a').forEach(a => {
+  //     a.addEventListener('click', () => {
+  //       mobileNav.classList.remove('open');
+  //       hamburger.setAttribute('aria-expanded', 'false');
+  //       hamburger.innerHTML = '<i class="fa-solid fa-bars"></i>';
+  //     });
+  //   });
+  // }
+
+
+  
+  const toggle = document.getElementById("servicesToggle");
+  const menu = document.getElementById("servicesMenu");
+
+  toggle.addEventListener("click", function(e) {
+    e.preventDefault();
+    menu.style.display =
+      menu.style.display === "block" ? "none" : "block";
+  });
+
+  document.addEventListener("click", function(e) {
+    if (!e.target.closest(".dropdown")) {
+      menu.style.display = "none";
+    }
+  });
+
+
 
   /* -------------------------
     Smooth in-page scroll + focus management

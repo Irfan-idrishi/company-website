@@ -193,6 +193,82 @@ nav a:focus-visible {
   font-size: 18px;
 }
 
+
+
+/* NAV */
+/* .main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav li {
+  position: relative;
+}
+
+.main-nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #222;
+  transition: 0.3s;
+}
+
+.main-nav a:hover {
+  color: #ff5862;
+} */
+
+/* DROPDOWN */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 120%;                 /* thoda niche */
+  left: 50%;                 /* center */
+  transform: translateX(-50%);  /* exact center */
+  background: #ffffff;
+  min-width: 240px;
+  padding: 15px 0;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+  display: none;
+  z-index: 999;
+}
+
+/* Dropdown items */
+.dropdown-menu li {
+  padding: 4px 5px;
+}
+
+.dropdown-menu li a {
+  display: block;
+  color: #333;
+  font-weight: 500;
+}
+
+.dropdown-menu li a:hover {
+  background: #f4f4f4;
+  border-radius: 50px;
+}
+
+/* .dropdown-menu {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+} */
+
+/* .dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+} */
+
+
+
+
 /* Sections */
 section {
   padding: clamp(56px, 6vw, 92px) 0;
