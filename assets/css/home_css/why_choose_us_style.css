@@ -1,0 +1,63 @@
+ /* Why Choose Us + stats */
+    .split{
+      display:grid; grid-template-columns: 1.1fr .9fr; gap: 18px; align-items:start;
+    }
+    .points{
+      display:grid; gap:12px;
+    }
+    .point{
+      display:flex; gap:12px;
+      padding: 14px 14px;
+      border-radius: 18px;
+      background: rgba(255,255,255,.88);
+      border:1px solid rgba(23,35,66,.10);
+      box-shadow: var(--shadow-soft);
+      transition: transform .25s var(--ease), border-color .25s var(--ease);
+    }
+    .point:hover{ transform: translateY(-4px); border-color: rgba(254,88,98,.28); }
+    .point .picon{
+      width:44px; height:44px; border-radius: 16px;
+      background: rgba(254,88,98,.14);
+      border:1px solid rgba(254,88,98,.22);
+      display:flex; align-items:center; justify-content:center;
+      color: var(--coral);
+      flex:0 0 auto;
+    }
+    .point h4{ margin:0 0 6px; color: var(--navy); }
+    .point p{ margin:0; color: var(--muted); font-size: 14px; }
+
+    .stats{
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      position:sticky;
+      top: 90px;
+    }
+    .stat{
+      border-radius: 18px;
+      padding: 16px 14px;
+      background: linear-gradient(180deg, rgba(23,35,66,.92), rgba(23,35,66,.78));
+      color: var(--white);
+      border:1px solid rgba(255,255,255,.10);
+      box-shadow: 0 18px 44px rgba(23,35,66,.18);
+      overflow:hidden;
+      position:relative;
+    }
+    .stat::after{
+      content:"";
+      position:absolute; inset:auto -40px -40px auto;
+      width: 140px; height: 140px;
+      background: radial-gradient(circle at 30% 30%, rgba(254,88,98,.34), transparent 62%);
+      transform: rotate(14deg);
+    }
+    .stat .num{
+      font-size: clamp(22px, 2.4vw, 30px);
+      font-weight:900;
+      letter-spacing:-.02em;
+    }
+    .stat .label{
+      color: rgba(255,255,255,.82);
+      font-weight:700;
+      margin-top: 6px;
+      font-size: 13px;
+    }

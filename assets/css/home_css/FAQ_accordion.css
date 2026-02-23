@@ -1,0 +1,66 @@
+  
+   
+
+    /* FAQ accordion */
+    .faq{
+      display:grid;
+      gap: 12px;
+    }
+    details{
+      border-radius: 18px;
+      border:1px solid rgba(23,35,66,.10);
+      background: rgba(255,255,255,.92);
+      box-shadow: var(--shadow-soft);
+      /* overflow:hidden; */
+    }
+    summary{
+      list-style:none;
+      cursor:pointer;
+      padding: 16px 16px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      color: var(--navy);
+      font-weight:950;
+      outline:none;
+    }
+    summary::-webkit-details-marker{ display:none; }
+    .faq-content{
+      padding: 0 16px 16px;
+      color: var(--muted);
+      font-weight:650;
+      font-size: 14px;
+    }
+    .chev{
+      width:42px; height:42px; border-radius:14px;
+      background: rgba(23,35,66,.06);
+      border:1px solid rgba(23,35,66,.10);
+      display:flex; align-items:center; justify-content:center;
+      transition: transform .28s var(--ease), background .28s var(--ease), border-color .28s var(--ease);
+      flex:0 0 auto;
+      color: var(--navy);
+    }
+    details[open] .chev{
+      transform: rotate(180deg);
+      background: rgba(254,88,98,.10);
+      border-color: rgba(254,88,98,.24);
+      color: var(--coral);
+    }
+
+    details[open] summary {
+  padding-bottom: 8px;
+}
+
+/* Important */
+.faq-content{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  padding: 0 16px;
+}
+
+details[open] .faq-content{
+  max-height: 500px; /* large enough */
+  padding: 0 16px 16px;
+}

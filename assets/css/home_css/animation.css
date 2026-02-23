@@ -1,0 +1,73 @@
+
+/* ==================== ANIMATIONS ==================== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* AOS Animation Classes */
+[data-aos="fade-up"] {
+  animation: fadeIn 0.8s ease-out;
+}
+
+[data-aos="fade-left"] {
+  animation: slideInLeft 0.8s ease-out;
+}
+
+[data-aos="fade-right"] {
+  animation: slideInRight 0.8s ease-out;
+}
+
+[data-aos="zoom-in"] {
+  animation: zoomIn 0.6s ease-out;
+}
+
+/* Delay classes */
+[data-aos-delay="100"] {
+  animation-delay: 0.1s;
+}
+[data-aos-delay="200"] {
+  animation-delay: 0.2s;
+}
+[data-aos-delay="300"] {
+  animation-delay: 0.3s;
+}

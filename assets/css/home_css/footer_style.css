@@ -1,0 +1,233 @@
+/* ================= FOOTER ================= */
+
+.ft {
+  background: #0f172a;
+   color: #fff;
+  padding: 70px 0 40px;
+  font-size: 14px;
+}
+
+.ft h3, .ft h4 {
+  margin-bottom: 15px;
+  color: white;
+}
+
+.ft p {
+  color: rgba(255,255,255,0.75);
+  line-height: 1.6;
+}
+
+.ft a {
+   color: #fdf8f8fd;
+  text-decoration: none;
+  transition: 0.3s ease;
+ 
+
+}
+
+.ft a:hover {
+  color: #fe5862;
+}
+
+
+/* Top Layout */
+.ft-top {
+  display: flex;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+/* Brand */
+.ft-brand {
+  display: flex;
+  gap: 15px;
+}
+
+.ft-logo img {
+  width: 70px;
+}
+
+.ft-badges {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.ft-badge {
+  background: rgba(255,255,255,0.08);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+/* Links */
+.ft-links {
+  display: flex;
+  gap: 40px;
+}
+
+.ft-col {
+  display: flex;
+  flex-direction: column;
+  /* gap: 8px; */
+}
+
+/* CTA */
+.ft-cta h4 {
+  margin-bottom: 10px;
+}
+
+.ft-form {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.ft-form input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.ft-form button {
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.ft-msg {
+  display: block;
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+/* Contact */
+.ft-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+/* Social */
+.ft-social {
+  margin-top: 15px;
+  display: flex;
+  gap: 12px;
+}
+
+.ft-social a {
+  width: 35px;
+  height: 35px;
+  background: rgba(255,255,255,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+/* Map Section */
+.ft-mapWrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.ft-map iframe {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* Buttons */
+.btn-primary {
+  background: #fe5862;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #ff6f78;
+}
+
+.btn-ghost {
+  border: 1px solid white;
+  padding: 8px 15px;
+  display: inline-block;
+  margin-top: 15px;
+  
+  
+}
+
+/* ================= book now ================= */
+.book_foot-primary {
+  background: #fe5862;
+  color: #fff;
+}
+
+.book_foot-primary:hover {
+  background: #ff6f78;
+}
+
+.book_foot-ghost {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 8px 15px;
+  display: inline-block;
+  margin-top: 15px;
+  
+  
+}
+
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1024px) {
+  .ft-top {
+    grid-template-columns:  1fr;
+  }
+
+  .ft-mapWrap {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .ft-top {
+    grid-template-columns: 1fr;
+  }
+
+  .ft-links {
+    flex-direction: column;
+  }
+
+  .ft-form {
+    flex-direction: column;
+  }
+
+  .ft-form button {
+    width: 100%;
+  }
+}
+
+
+
+@media (max-width:768px){
+
+  .footer-top{
+    grid-template-columns:1fr !important;
+    text-align:center;
+  }
+
+  .footer-bottom{
+    flex-direction:column;
+    gap:10px;
+    text-align:center;
+  }
+
+}
